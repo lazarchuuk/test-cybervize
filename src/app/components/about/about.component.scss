@@ -1,0 +1,41 @@
+.details {
+  display: flex;
+  gap: 32px;
+
+  & > * {
+    flex: 1;
+  }
+}
+
+.right {
+  h2 {
+    margin-top: 16px;
+  }
+}
+
+.creds {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+h2 {
+  margin: 32px 16px 0;
+}
+
+.card-item {
+  .value {
+    font-size: 18px;
+    font-weight: 600;
+    color: #202A50;
+    margin: 16px 0;
+
+    a {
+      text-decoration: none;
+      color: #202A50;
+    }
+  }
+}
+
+.card-item:not(:first-child) {
+  margin-top: 24px;
+}

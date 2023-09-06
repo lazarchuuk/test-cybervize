@@ -1,0 +1,21 @@
+@import "primeicons/primeicons.css";
+
+html, body {
+  height: 100%;
+}
+
+body,
+body .p-component {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+body {
+  margin: 0 80px;
+  background-color: #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 16px;
+  }
+}

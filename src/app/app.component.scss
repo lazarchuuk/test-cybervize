@@ -1,0 +1,35 @@
+.toolbar {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 16px 0;
+  background: transparent;
+  margin-bottom: 16px;
+}
+
+.active-link {
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-size: 16px;
+  color: #202A50;
+  display: block;
+  padding: 0 8px;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.content {
+  margin: 8px 0;
+}

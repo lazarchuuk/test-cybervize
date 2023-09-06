@@ -1,0 +1,19 @@
+<section class="toolbar">
+  <a [routerLink]="''">
+    <img src="assets/icons/icon.svg" height="40" alt="Company logo">
+  </a>
+
+  <ul>
+    <li>
+      <a [routerLink]="''" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" >Home</a>
+    </li>
+    <li>
+      <a [routerLink]="'about'" routerLinkActive="active-link" >About</a>
+    </li>
+  </ul>
+</section>
+
+<section class="content">
+  <router-outlet></router-outlet>
+</section>
+

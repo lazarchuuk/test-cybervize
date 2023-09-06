@@ -1,0 +1,27 @@
+<section class="card">
+    <div class="general">
+        <div class="name">
+            {{drug.name}}
+        </div>
+        <div class="date">
+            <p class="header">Release to market</p>
+            {{drug.released | date}}
+        </div>
+    </div>
+    <div class="details">
+        <div class="description">
+            <p class="header">Description</p>
+            {{drug.description}}
+        </div>
+        <div class="diseases">
+            <p class="header">Related disease(s)</p>
+            <div class="chip-container">
+                <p-chip *ngFor="let dis of drug.diseases">
+                    <p class="chip">{{dis | titlecase}}</p>
+                </p-chip>
+            </div>
+        </div>
+    </div>
+
+</section>
+

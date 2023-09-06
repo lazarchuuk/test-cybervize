@@ -1,0 +1,24 @@
+<section class="filter">
+    <i class="filter-icon pi pi-search"></i>
+
+    <span class="filter-field p-input-icon-right">
+    <input type="text" id="search" placeholder="Search by name, disease or any keywords..." pInputText
+           [(ngModel)]="value"/>
+    <i *ngIf="value" class="btn pi pi-times" (click)="value=''"></i>
+  </span>
+</section>
+
+<section class="cards" *ngIf="drugList$ | async as drugList">
+    <ng-container *ngIf="drugList | filter: value as filtered">
+        <ng-container *ngIf="filtered.length; else noResults">
+            <p class="message">Showing {{filtered.length}} results </p>
+        </ng-container>
+
+        <app-drug-card *ngFor="let drug of filtered" [drug]="drug"></app-drug-card>
+    </ng-container>
+</section>
+
+<ng-template #noResults>
+    <p class="message">No results found for <b>{{value}}</b></p>
+    <p class="message">Please, try a new search</p>
+</ng-template>

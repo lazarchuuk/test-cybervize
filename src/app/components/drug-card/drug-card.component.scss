@@ -1,0 +1,84 @@
+.general {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  .name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #202A50;
+    line-height: 28px;
+  }
+
+  .date {
+    text-align: end;
+    font-size: 18px;
+  }
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+
+  .diseases {
+    text-align: end;
+    margin-left: 16px;
+    flex: 0 0 24em;
+  }
+}
+
+::ng-deep p-chip {
+  .p-chip {
+    background-color: #FFFFFF;
+    border: 1px solid #6EC52F;
+  }
+}
+
+.chip {
+  margin: 4px;
+  font-size: 14px;
+}
+
+.chip-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px
+}
+
+@media screen and (max-width: 768px) {
+  .general {
+    .name {
+      font-size: 20px;
+    }
+
+    .date {
+      font-size: 16px;
+    }
+  }
+
+  .details {
+    flex-direction: column;
+
+    .diseases {
+      text-align: start;
+      flex: unset;
+      margin: 16px 0;
+    }
+  }
+
+  .chip-container {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .general {
+    flex-direction: column;
+    gap: 16px;
+
+    .date {
+      text-align: start;
+    }
+  }
+}
