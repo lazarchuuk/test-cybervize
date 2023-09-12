@@ -16,6 +16,7 @@
 .creds {
   font-size: 18px;
   margin: 8px 0;
+  line-height: 28px;
 }
 
 h2 {
@@ -38,4 +39,11 @@ h2 {
 
 .card-item:not(:first-child) {
   margin-top: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .details {
+    flex-direction: column;
+    gap: unset;
+  }
 }

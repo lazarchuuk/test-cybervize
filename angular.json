@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cybervize:build:production"
+              "browserTarget": "test-cybervize:build:production"
             },
             "development": {
-              "browserTarget": "cybervize:build:development"
+              "browserTarget": "test-cybervize:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cybervize:build"
+            "browserTarget": "test-cybervize:build"
           }
         },
         "test": {
